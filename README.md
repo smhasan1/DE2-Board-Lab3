@@ -18,10 +18,10 @@ When ParallelLoadn is a logic-1 and RotateRight is a logic-0, the bits of the re
   Q6Q5Q4Q3Q2Q1Q0Q7  
   Q5Q4Q3Q2Q1Q0Q7Q6  
 
-
+![image](https://user-images.githubusercontent.com/19510655/34781240-4d09953c-f5f3-11e7-88d3-b54753418e86.png)  
 Figure 1. Sub-circuit for part 1.  
 
-
+![image](https://user-images.githubusercontent.com/19510655/34781270-659222e0-f5f3-11e7-8013-a93ee9810f04.png)  
 Figure 2. Overall circuit for Part 1.  
 
 Figure 2 shows the inputs and outputs of the overall left/right rotating register circuit with parallel load, which will contain eight instances of the circuit in Figure 1.  
@@ -41,7 +41,7 @@ Note: if you run into bounce problems with KEY0 for your clock you are welcome t
 **Part 2.**  
 You will use the ALU you designed in Part 3 of Lab 2 to build the circuit shown below in Figure 3. The circuit contains an 8-bit register that drives the B input of the ALU. Design your register with an active-low asynchronous reset. Observe that at each positive clock edge, the data on the ALU output is stored in the register, and as such, it becomes an operand in the next computation. This circuit can do a variety of computations, based on the “instruction” appearing on the 3-bit-wide OPCODE input, and where the result of a computation is stored in memory (the 8-bit register).  
 
-
+![image](https://user-images.githubusercontent.com/19510655/34781288-70d6e49c-f5f3-11e7-9a83-f4134f2f65e0.png)  
 Figure 3. Circuit for part 2.  
 
 We wish to display the hexadecimal value of the 8-bit number B_IN on the two 7-segment displays, HEX1−0. Likewise, we wish to display the hexadecimal value of the 8-bit number DATA on the two 7-segment displays, HEX3 − 2. You will need to design a 7-segment decoder that displays the correct hexadecimal digit for a 4-bit binary input. Your design will instantiate four instances of your decoder.  
