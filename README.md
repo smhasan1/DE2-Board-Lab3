@@ -19,6 +19,11 @@ When ParallelLoadn is a logic-1 and RotateRight is a logic-0, the bits of the re
   Q5Q4Q3Q2Q1Q0Q7Q6  
 
 
+Figure 1. Sub-circuit for part 1.  
+
+
+Figure 2. Overall circuit for Part 1.  
+
 Figure 2 shows the inputs and outputs of the overall left/right rotating register circuit with parallel load, which will contain eight instances of the circuit in Figure 1.  
 
 Do the following steps:  
